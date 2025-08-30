@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidcup Family Golf</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Assests/favicon-32x32.png" type="image/png">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Sidcup Family Golf</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="Assests/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Sidcup Family Golf</h1>
+      <p>A perfect destination for golf, fun, and family time.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+       Sidcup Family Golf is more than just a place to play — it’s a community hub where golf, leisure, and family time come together. Our facility is designed to welcome players of all ages and skill levels, offering a unique blend of learning, fun, and relaxation.</p>
+
+<p>       <u>Our mission is simple</u>: to make golf accessible, enjoyable, and memorable for everyone. Whether you’re here to improve your swing, spend quality time with loved ones, or simply enjoy the outdoors, Sidcup Family Golf is your perfect destination</p>
+    </div>
+    <div class="about-image">
+      <img src="Assests/page2-left.avif" alt="About us">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <img src="Assests/card1.avif" alt="Golf Lessons">
+        <h3>Golf Lessons</h3>
+        <p>Professional golf lessons for all age groups with certified trainers.</p>
+      </div>
+      <div class="card">
+        <img src="Assests/card2.webp" alt="Mini Golf">
+        <h3>Mini Golf</h3>
+        <p>Fun-filled mini golf course for kids and families to enjoy together.</p>
+      </div>
+      <div class="card">
+        <img src="Assests/card3.avif" alt="Events">
+        <h3>Events & Parties</h3>
+        <p>Host birthdays, team outings, and special events with us.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Fill out the form below and we’ll get back to you shortly.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Sidcup Family Golf. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Custom Popup Modal -->
+<div id="customPopup" style="display:none; position:fixed; top:0; left:0; 
+    width:100%; height:100%; background:rgba(0,0,0,0.5); 
+    align-items:center; justify-content:center; z-index:1000;">
+  <div style="background:#fff; padding:20px; border-radius:10px; 
+      text-align:center; width:300px; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+    <h2 style="margin:0 0 10px; color:#2c3e50;">Sidcup Family Golf</h2>
+    <p id="popupMessage" style="margin-bottom:15px; color:#555;"></p>
+    <button onclick="closePopup()" 
+      style="padding:8px 16px; border:none; background:#27ae60; 
+      color:white; border-radius:5px; cursor:pointer;">OK</button>
+  </div>
+</div>
+
+</body>
+</html>
